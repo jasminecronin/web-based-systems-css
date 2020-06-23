@@ -1,0 +1,310 @@
+/*Reset default formatting.*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background: transparent;
+}
+
+body {
+    background-color: #ededdf;
+    color: #040507;
+}
+
+.flex-container {
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+}
+
+.banner {
+    flex: 1;
+}
+
+#header {
+    background-color: #52251c;
+    margin: 0;
+    height: 80px;
+}
+
+/*Image formatting*/
+img {
+    display: block;
+    max-width: 900px;
+    max-height: 800px;
+    position: absolute;
+    z-index: 10;
+    top: 10%;
+}
+
+#feast {
+    width: 50%;
+    top: 500px;
+    left: 25%;
+}
+
+#chicken {
+    right: 15%;
+    clip: rect(0px, 900px, 650px, 0px);
+}
+
+#turnips {
+    max-width: 800px;
+    left: 5%;
+    clip: rect(0px, 800px, 700px, 100px);
+}
+
+#salad {
+    max-width: 500px;
+    right: 15%;
+    clip: rect(0px, 800px, 600px, 50px);
+}
+
+#pears {
+    max-height: 650px;
+    left: 20%;
+}
+
+/*Formatting for title banners*/
+.titlebarleft {
+    background-image: linear-gradient(to right, rgba(251,171,36,1), rgba(251,171,46,0.2));
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    z-index: 1;
+}
+
+.titlebarright {
+    background-image: linear-gradient(to left, rgba(251,171,36,1), rgba(251,171,46,0.2));
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    z-index: 1;
+}
+
+h1 {
+    position: absolute;
+    font-size: 100px;
+    font-family: 'Fondamento', cursive;
+    top: 220px;
+    left: 350px;
+    z-index: 15;
+    text-shadow: 2px 4px 5px #52251c;
+}
+
+.title2left {
+    top: 335px;
+    left: 500px;
+}
+
+.title1right {
+    left: 1050px;
+}
+
+.title2right {
+    top: 335px;
+    left: 1250px;
+}
+
+/*Formatting for content below title banners*/
+.container {
+    margin: 1100px auto;
+    width: 1200px;
+    padding: 15px;
+}
+
+#intro {
+    font-family: 'Cabin', sans-serif;
+    font-size: 17px;
+}
+
+table, th, td {
+    border: 2px solid #52251c;
+}
+
+table {
+    margin-top: 50px;
+    border-collapse: collapse;
+    width: 70%;
+    margin-left: 15%;
+}
+
+th {
+    font-family: 'Fondamento', cursive;
+    color: #52251c;
+    font-size: 30px;
+    font-weight: bold;
+    font-variant: small-caps;
+    padding: 10px;
+    background-color: #fbab2e;
+}
+
+td {
+    text-align: center;
+    vertical-align: center;
+    padding: 10px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 17px;
+}
+
+/*Formatting for star images in main page table*/
+.star {
+    position: relative;
+    display: flex;
+    max-height: 30px;
+}
+
+.starcolumn {
+    float: left;
+    width: 20%;
+}
+
+.rating {
+    padding: 10px 30px;
+    width: 170px;
+}
+
+/*Formatting for recipe text*/
+.recipe {
+    margin: 750px auto;
+    width: 1200px;
+    flex: 1;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    font-family: 'Cabin', sans-serif;
+    padding: 15px;
+}
+
+.ingredients {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+h2 {
+    font-family: 'Fondamento', cursive;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px #52251c;
+}
+
+ul {
+    padding: 15px;
+    list-style-position: inside;
+    list-style-type: none;
+    font-size: 17px;
+}
+
+ul li {
+    margin: 2px;
+}
+
+.quantity {
+    font-weight: bold;
+    color: #a31628;
+    font-size: 1.1em;
+}
+
+.directions {
+    grid-column: 2;
+    grid-row: 2 / 4;
+}
+
+ol {
+    padding: 15px 15px 15px 30px;
+    list-style-position: outside;
+    list-style-type: lower-roman;
+    font-size: 17px;
+}
+
+ol li {
+    margin: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.description {
+    grid-row: 3;
+    grid-column: 1;
+    padding: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+    font-size: 19px;
+    background-image: linear-gradient(to bottom right, rgba(251,171,36,1), rgba(251,171,46,0.2));
+    border-radius: 10px;
+}
+
+.info {
+    grid-row: 2;
+    grid-column: 1;
+    padding: 15px;
+}
+
+.info p {
+    margin: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 17px;
+}
+
+.quote {
+    grid-row: 1;
+    grid-column: 1;
+    padding: 15px 75px;
+    font-family: 'Fondamento', cursive;
+    font-size: 18px;
+    color: #52251c;
+}
+
+.oldrecipe {
+    grid-row: 4;
+    grid-column: 1 / 3;
+    font-family: 'Fondamento', cursive;
+    font-size: 21px;
+    color: #52251c;
+    padding: 15px 150px;
+    margin-top: 15px;
+}
+
+.source {
+    font-size: 19px;
+    font-weight: bold;
+    float: right;
+    color: #a31628;
+}
+
+.oldsource {
+    font-size: 22px;
+    font-weight: bold;
+    float: right;
+    color: #a31628;
+}
+
+/*Navigation bar formatting*/
+#navbar {
+    list-style: none;
+    text-align: center;
+}
+
+#navbar li {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 25px;
+    font-variant: small-caps;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #ededdf;
+    font-family: 'Fondamento', cursive;
+}
+
+#navbar li a:hover {
+    color: #fbab2e;
+}
